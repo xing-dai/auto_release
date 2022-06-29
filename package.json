@@ -35,7 +35,7 @@
     "prerelease": "npm run update:check && npm run contributors",
     "release": "standard-version",
     "release:github": "conventional-github-releaser -p angular",
-    "release:tags": "git push --follow-tags origin HEAD:master",
+    "release:tags": "git push --follow-tags origin HEAD:develop",
     "test": "c8 ava",
     "update": "ncu -u",
     "update:check": "ncu -- --error-level 2"
