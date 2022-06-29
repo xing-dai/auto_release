@@ -40,6 +40,7 @@
     "update": "ncu -u",
     "update:check": "ncu -- --error-level 2"
   },
+  "private": true,
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
