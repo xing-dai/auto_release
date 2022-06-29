@@ -1,7 +1,7 @@
 {
   "name": "try_auto_release",
   "description": "this is a project to try out auto release",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "contributors": [
     {
       "name": "Xing Dai",
@@ -20,7 +20,7 @@
     "conventional-github-releaser": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
-    "nano-staged": "latest",
+    "nano-staged": "^0.8.0",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
     "simple-git-hooks": "latest",
@@ -48,5 +48,8 @@
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit",
     "pre-commit": "npx nano-staged"
-  }
+  },
+  "nano-staged": {
+    "*.{js,ts}": "prettier --write"
+ }
 }
