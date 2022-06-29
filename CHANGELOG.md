@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/xing-dai/auto_release/compare/v1.8.0...v1.9.0) (2022-06-29)
+
+
+### Features
+
+* add feature17 ([#17](https://github.com/xing-dai/auto_release/issues/17)) ([c5f964b](https://github.com/xing-dai/auto_release/commit/c5f964b349bf3040eaebcc04d0bd2e086fcad66b))
+
+
+### Bug Fixes
+
+* fix2 ([#19](https://github.com/xing-dai/auto_release/issues/19)) ([2c9add0](https://github.com/xing-dai/auto_release/commit/2c9add0a32d719da741cec805fbe5957c3daa5ff))
+
 ## [1.8.0](https://github.com/xing-dai/auto_release/compare/v1.7.0...v1.8.0) (2022-06-29)
 
 
