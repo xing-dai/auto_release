@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/xing-dai/auto_release/compare/v1.3.0...v1.4.0) (2022-06-29)
+
+
+### Features
+
+* **ui:** add feature3 ([7d4758b](https://github.com/xing-dai/auto_release/commit/7d4758baccb573df5e38dcd1da08c14f178a0923))
+
 ## [1.3.0](https://github.com/xing-dai/auto_release/compare/v1.2.0...v1.3.0) (2022-06-29)
 
 
