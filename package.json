@@ -1,5 +1,16 @@
 {
-  "version": "1.0.0",
+  "name": "try_auto_release",
+  "description": "this is a project to try out auto release",
+  "version": "1.0.1",
+  "contributors": [
+    {
+      "name": "Xing Dai",
+      "email": "xing@goodnotesapp.com"
+    }
+  ],
+  "dependencies": {
+    "nestjs": "^0.0.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
@@ -17,30 +28,25 @@
     "standard-markdown": "latest",
     "standard-version": "latest"
   },
-  "dependencies": {
-    "nestjs": "^0.0.1"
+  "files": [],
+  "scripts": {
+    "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
+    "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
+    "prerelease": "npm run update:check && npm run contributors",
+    "release": "standard-version -a",
+    "release:github": "conventional-github-releaser -p angular",
+    "release:tags": "git push --follow-tags origin HEAD:master",
+    "test": "c8 ava",
+    "update": "ncu -u",
+    "update:check": "ncu -- --error-level 2"
   },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
   },
-  "scripts": {
-    "test": "c8 ava",
-    "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
-    "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
-    "prerelease": "npm run update:check && npm run contributors",
-    "release:github": "conventional-github-releaser -p angular",
-    "release:tags": "git push --follow-tags origin HEAD:master",
-    "release": "standard-version -a",
-    "update:check": "ncu -- --error-level 2",
-    "update": "ncu -u"
-  },
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit",
     "pre-commit": "npx nano-staged"
-  },
-  "contributors": [
-    "Xing Dai <xing@goodnotesapp.com>"
-  ]
+  }
 }
