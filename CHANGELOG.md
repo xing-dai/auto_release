@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.1.0 (2022-06-29)
+
+
+### Features
+
+* **parser:** we now have a parser \o/ ([cceea48](https://github.com/xing-dai/auto_release/commit/cceea4804ba3abf1a975013564971f449c1d7524))
+
+
+### Bug Fixes
+
+* **config:** update ([7cd94d9](https://github.com/xing-dai/auto_release/commit/7cd94d9f9c72e2b4ebcf6351ee7826e46ee96bf7))
+* **parsing:** fixed a bug in our parser ([522d002](https://github.com/xing-dai/auto_release/commit/522d002989076bc642edd2b6097aa5ec63d1bd35))
+* **parsing:** fixed a bug in our parser ([1df3e66](https://github.com/xing-dai/auto_release/commit/1df3e66de2de76eb3892b49ac4aa167b84590ea7))
+
 ### 1.0.3 (2022-06-29)
 
 
