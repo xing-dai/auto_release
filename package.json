@@ -1,7 +1,7 @@
 {
   "name": "try_auto_release",
   "description": "this is a project to try out auto release",
-  "version": "1.4.0",
+  "version": "1.7.0",
   "contributors": [
     {
       "name": "Xing Dai",
@@ -35,7 +35,7 @@
     "prerelease": "npm run update:check && npm run contributors",
     "release": "standard-version",
     "release:github": "conventional-github-releaser -p angular",
-    "release:tags": "git push --follow-tags origin HEAD:master",
+    "release:tags": "git push --follow-tags origin HEAD:develop",
     "test": "c8 ava",
     "update": "ncu -u",
     "update:check": "ncu -- --error-level 2"
